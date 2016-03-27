@@ -1,0 +1,129 @@
+/* CSS Specificity Code Model */
+
+/* 1.0 Elements */
+
+ /* 1.1 Reset */
+ 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+ /* 1.2 Typography */
+ 
+body { font:75%/1.5em "lucida grande","lucida sans unicode", sans-serif; }
+
+p { padding:0 0  1em 0;color:#111; }
+
+p img { float: left; margin: 0.3em 0.833em 0.833em 0; padding: 0; }
+
+h1,h2{ font-weight:normal; color: #333; font-family:Georgia, "Times New Roman", serif;  }
+h3,h4,h5,h6 { font-weight: normal; color: #333; font-family:Georgia, "Times New Roman", serif; }
+
+h1 { font-size: 2.2em;  margin-bottom: 0.682em; }
+h2 { font-size: 1.9em;  margin-bottom: 0.79em; }
+h3 { font-size: 1.7em;  margin-bottom: 0.882em; }
+h4 { font-size: 1.4em;  margin-bottom: 1.071em; }
+h5,h6 { font-size: 1.3em;  margin-bottom: 1.154em; }
+
+a { color:#035292; text-decoration:none; }
+a:hover { text-decoration: underline; }
+
+
+table { margin-bottom:1.5em; border-collapse: collapse; }
+th { font-weight:bold; }
+tr,th,td { margin:0; padding:0 1.5em 0 1em; height:18px; }
+tfoot { font-style: italic; }
+caption { text-align:center; font-family:Georgia, serif; }
+
+li ul, 
+li ol  { margin:0 1.5em; }
+ul, ol { margin: 0 1.5em 1.5em 1.5em; }
+
+
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+dl dd { margin-left: 1.5em; }
+
+/* 2.0 CLASSES */
+
+ /* 2.1 Typography Classes */
+
+.tc { text-align:center; }
+.tr { text-align:right; }
+.tl { text-align:left; }
+.b { font-weight:bold; }
+.i { font-style:italic; }
+
+.indent { text-indent:1.5em;}
+.open { font-variant: small-caps; }
+.oldbook { font-family:"Book Antiqua","Warnock Pro","Goudy Old Style","Palatino",Georgia,serif; }
+.note { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-size:0.9em; margin:0.1em; color:#333; } 
+.mono { font-family:"Courier New", Courier, monospace; }
+
+p.break { text-align:center;text-indent:0;line-height:0; }
+p.zero{padding:0; margin:0}
+p.one { padding:0 1em  1em 1em;color:#111;}
+p img.right { float: right; margin: 0.3em  0 0.833em 0.833em;  }
+p img.right10 { float: right; margin:0.833em;  }
+
+ /* 2.2 Layout Classes */
+ 
+ .g160,.g320,.g480,.g640,.g800,.g960,.g80,.g240,.g400,.g560,.g720,.g880,.g960 {float:left; *display: inline; margin-left:10px;  } 
+
+	/* 6 columns */
+.g160 {width:150px; }
+.g320  {width:310px;}
+.g480  {width:470px;}
+.g640  {width:630px;}
+.g800  {width:790px;}
+.g960  {width:950px;}
+
+	/* 12 columns */
+.g80 {width:70px;}
+.g240 {width:230px;}
+.g400 {width:390px;}
+.g560 {width:550px;}
+.g720 {width:710px;}
+.g880 {width:870px;}
+
+
+.clear {clear:both;}
+.inside{margin-left:0;}
+
+/* 3.0 ID */
+
+ /* 3.1 Layout ID */
+ 
+#container {  margin:0 auto;  width:970px; padding-top:10px;   }
+#header, #footer {width:960px; float:left; *display: inline; background-color:#CCC;  }
+#main {width:640px; float:left; *display: inline;  }
+#sidebar {width:320px; float:left; *display: inline;  }
+ 
+ #nav {
+margin: 0;
+padding: 0 0 0 10px;
+list-style-type: none;
+background-color:#bbb;
+font-size:1.2em;
+font-weight:700;
+float: left; 
+}
+
+#nav li {
+margin: 0;
+padding: 0;
+float: left;
+width: 70px;
+}
